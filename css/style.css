@@ -1,0 +1,69 @@
+@import url(./_global.css);
+@import url(./_utility.css);
+
+/* MAIN - INTRO */
+
+body {
+}
+
+main {
+  padding-top: 15rem;
+  background-image: url("../media/img/intro-bg.svg");
+  background-color: #ffffff;
+  background-origin: content-box;
+  background-position: 150% -150px;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro-text {
+  display: flex;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+
+.introduction .tag-line {
+  font-weight: 700;
+  font-size: var(--font-size-large);
+  margin-bottom: 2rem;
+  color: var(--theme-color);
+}
+
+.introduction .main-line {
+  font-weight: 700;
+  font-size: var(--font-size-xlarge);
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.introduction .description {
+  font-size: var(--font-size-reg);
+  margin-bottom: 3rem;
+}
+
+.intro-text div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.intro-videos {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
