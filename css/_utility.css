@@ -14,6 +14,42 @@
   margin-right: 2rem;
 }
 
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .container {
   width: 90%;
   max-width: 1280px;
@@ -22,12 +58,12 @@
 
 .btn {
   background-color: var(--theme-color);
-  padding: 1rem 2rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 12px;
   border: none;
   font-size: var(--font-size-small);
   font-weight: 400;
-  color: var(--white);
+  color: #ffffff;
 }
 
 .btn:hover {
@@ -48,4 +84,22 @@
 
 .active {
   color: var(--theme-color);
+}
+
+p a:link {
+  font-weight: 700;
+}
+
+p a:visited {
+  font-weight: 700;
+}
+
+p a:hover {
+  font-weight: 700;
+  color: var(--theme-color-hover);
+}
+
+p a:active {
+  font-weight: 700;
+  color: var(--theme-color-hover);
 }
