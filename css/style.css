@@ -8,9 +8,9 @@ main {
   background-image: url("../media/shapes/bg-shape-1.svg");
   background-color: #ffffff;
   background-origin: content-box;
-  background-position: 150% -150px;
+  background-position: 120% -200px;
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 70%;
 }
 
 .intro-section {
