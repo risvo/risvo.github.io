@@ -1,6 +1,26 @@
 @media only screen and (max-width: 850px) {
+  .m-plr-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mtb-1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  main {
+    padding-top: 5rem;
+    background-position: 95% 20vh;
+    background-size: 100%;
+  }
+
   .intro-section {
     flex-direction: column;
+  }
+
+  .main-line {
+    line-height: 3.4rem;
   }
 
   .intro-text,
@@ -13,5 +33,37 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .intro-section .btn {
+    width: 90vw;
+    max-width: 400px;
+  }
+
+  .partners {
+    margin: 2rem auto;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    height: auto;
+    flex-direction: column;
+    padding: 4rem 1rem;
+  }
+
+  .footer-col {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .footer-col h5 {
+    font-size: var(--font-size-small);
+    line-height: var(--font-size-reg);
+    margin-block-start: 1.8rem;
+    margin-block-end: 0.2rem;
   }
 }
