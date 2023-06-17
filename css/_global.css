@@ -79,12 +79,18 @@ header {
 
 .d-menu ul li {
   font-size: var(--font-size-small);
-  color: var(--theme-text);
   font-weight: 600;
-  padding: 1rem;
 }
 
-.d-menu ul li:hover {
+.d-menu ul li a:link {
+  color: var(--theme-text);
+}
+
+.d-menu ul li a:visited {
+  color: var(--theme-text);
+}
+
+.d-menu ul li a:hover {
   color: var(--theme-color);
   text-decoration: underline;
   text-decoration-color: var(--theme-color-hover);
@@ -113,6 +119,61 @@ header {
 .description {
   font-size: var(--font-size-reg);
   margin-bottom: 2rem;
+}
+
+/* ELEMENTS */
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.btn {
+  background-color: var(--theme-secondary-color);
+  padding: 0.6rem 1.4rem;
+  border-radius: 12px;
+  border: none;
+  font-size: var(--font-size-small);
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.btn:hover {
+  /* color: var(--color-1); */
+  background-color: var(--theme-secondary-color-hover);
+}
+
+.highlight::before {
+  content: "";
+  width: 450px;
+  height: 20%;
+  background-color: var(--theme-color);
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.active {
+  color: var(--theme-color);
+}
+
+p a:link {
+  font-weight: 700;
+}
+
+p a:visited {
+  font-weight: 700;
+}
+
+p a:hover,
+p a:active {
+  color: var(--theme-color);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--theme-color-hover);
+  text-decoration-thickness: 5px;
 }
 
 /* FOOTER */

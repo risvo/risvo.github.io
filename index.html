@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="#" type="image/x-icon">
 
     <!-- <script src="https://kit.fontawesome.com/d60a9c344c.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/_responsive.css">
 </head>
 
@@ -22,26 +22,17 @@
             </div>
             <nav class="d-menu">
                 <ul>
-                    <a href="http://">
-                        <li>Chi siamo</li>
-                    </a>
-                    <a href="http://">
-                        <li>Cosa facciamo</li>
-                    </a>
-
-                    <a href="http://">
-                        <li>Open data</li>
-                    </a>
-
-                    <a href="http://">
-                        <li>Media</li>
-                    </a>
-
-                    <a href="http://">
-                        <li>Partners</li>
-                    </a>
-
                 </ul>
+            </nav>
+            <nav class="m-menu">
+                <div id="m-menu-toggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -56,12 +47,12 @@
                     <p class="description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <div>
-                        <a href="http://" class="btn mr-1 text-center">Per il pubblico</a>
-                        <a href="http://" class="btn text-center mtb-1">Per chi fa ricerca</a>
+                    <div class="mtb-1">
+                        <button class="btn text-center mr-1 m-mlr-auto">Per il pubblico</button>
+                        <button class="btn text-center m-mtb-1 m-mlr-auto">Per chi fa ricerca</button>
                     </div>
                 </div>
-                <div class="intro-videos mtb-1">
+                <div class="intro-videos m-mtb-1">
                     <iframe class="video" src="https://www.youtube.com/embed/1DvkMKSjWRc" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -76,7 +67,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <div class="cards">
-                <div class="card p-2 mr-1  mtb-1">
+                <div class="card p-2 mr-1  t-mtb-1">
                     <p class="card-icon p-1 text-center"><img src="./media/logos/anipio.png" alt="Logo ANPIO"></p>
                     <!-- <p class="card-title pt-1 pb-1 text-center">ANIPIO</p> -->
                     <p class="card-description pt-1">La
@@ -89,7 +80,7 @@
                         dell'informazione aperta sulla situazione a livello locale e nazionale.
                     </p>
                 </div>
-                <div class="card p-2 mr-1 mtb-1">
+                <div class="card p-2 mr-1 t-mtb-1">
                     <p class="card-icon p-1 text-center"><img src="./media/logos/onData.png" alt="Logo onData"></p>
                     <!-- <p class="card-title pt-1 pb-1 text-center">onData</p> -->
                     <p class="card-description pt-1">
@@ -102,14 +93,14 @@
                         “pandemie silenti” come l'antibiotico resistenza.
                     </p>
                 </div>
-                <div class="card p-2  mtb-1">
+                <div class="card p-2  t-mtb-1">
                     <p class="card-icon p-1 text-center"><img src="./media/logos/unipr.jpg"
                             alt="Logo Università di Parma"></p>
                     <!-- <p class="card-title pt-1 pb-1 text-center">UNIPR</p> -->
                     <p class="card-description pt-1">Presso il <a href="https://www.simlab.unipr.it/" target="_blank"
                             rel="noopener noreferrer">SIM.LAB</a>, Laboratorio per la didattica in simulazione del
                         Dipartimento di Medicina e Chirurgia dell’Università di Parma, è in sviluppo il progetto RISVO
-                        che prevede il coinvolgimento di studenti dell’alta formazione del Master in "Management del
+                        che vede coinvolti gli studenti dell’alta formazione del Master in "Management del
                         Rischio Infettivo correlato all’assistenza sanitaria" per condurre ricerca sul campo sulla
                         situazione della gestione e utilizzo dei dati sul rischio infettivo in Italia a fini di
                         informazione, simulazione e formazione.</p>
@@ -118,38 +109,7 @@
         </section>
     </main>
 
-    <footer>
-        <section class="footer pt-7">
-            <div class="footer-col f-credits text-center pr-1 m-plr-0">
-                <h5>Risvo</h5>
-                <span></span>
-            </div>
-            <div class="footer-col text-center plr-1 m-plr-0">
-                <h5>Contatti</h5>
-                <a href="mailto:federico.monaco@unipr.it">federico.monaco@unipr.it</a>
-                SIM.LAB Laboratorio didattico per la simulazione in Medicina - Dipartimento di Medicina e Chirurgia -
-                Università di Parma
-            </div>
-            <div class="footer-col text-left plr-1 m-plr-0">
-                <h5>Policy</h5>
-                <ul>
-                    <li><a href="http://">Privacy</a></li>
-                    <li><a href="http://">Cookie</a></li>
-                </ul>
-            </div>
-            <div class="footer-col text-left pl-1 m-plr-0">
-                <h5>Social</h5>
-                <ul class="f-social">
-                    <li><a href="https://risvo.github.io/" target="_blank" rel="noopener noreferrer">Github</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=1DvkMKSjWRc" target="_blank"
-                            rel="noopener noreferrer">Youtube</a></li>
-                    <li><a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://discord.com/channels/1110201669154787328/1110201671423901826" target="_blank"
-                            rel="noopener noreferrer">Discord</a></li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+    <footer></footer>
 </body>
 <script src="./js/main.js"></script>
 
