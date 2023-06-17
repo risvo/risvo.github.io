@@ -6,6 +6,7 @@
   --theme-text-long: #718096;
   --theme-color: #00bfa5;
   --theme-color-hover: #64ffda;
+  --theme-color-light: #b2ebe4;
   --theme-secondary-color: #b80c09;
   --theme-secondary-color-hover: #d34f4d;
   --theme-section-bg: #f6f7fc;
@@ -186,7 +187,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: var(--theme-color);
+  background-color: var(--theme-color-light);
   border-radius: 10px;
 }
 
