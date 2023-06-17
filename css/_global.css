@@ -4,10 +4,10 @@
   --theme-text: #2d3748;
   --theme-text-dull: #5c6069;
   --theme-text-long: #718096;
-  --theme-color: #b80c09;
-  --theme-color-hover: #d34f4d;
-  /*   --theme-color: #00bfa5;
-  --theme-color-hover: #64ffda; */
+  --theme-color: #00bfa5;
+  --theme-color-hover: #64ffda;
+  --theme-secondary-color: #b80c09;
+  --theme-secondary-color-hover: #d34f4d;
   --theme-section-bg: #f6f7fc;
   --theme-prove-color: #b8336a;
   --theme-prove-color: #d30c7b;
@@ -95,7 +95,7 @@ header {
 }
 
 .tag-line span {
-  color: var(--theme-color);
+  color: var(--theme-secondary-color);
 }
 
 .main-line {

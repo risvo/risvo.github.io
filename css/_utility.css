@@ -57,7 +57,7 @@
 }
 
 .btn {
-  background-color: var(--theme-color);
+  background-color: var(--theme-secondary-color);
   padding: 0.6rem 1.4rem;
   border-radius: 12px;
   border: none;
@@ -67,8 +67,8 @@
 }
 
 .btn:hover {
-  color: var(--color-1);
-  background-color: var(--theme-color-hover);
+  /* color: var(--color-1); */
+  background-color: var(--theme-secondary-color-hover);
 }
 
 .highlight::before {
