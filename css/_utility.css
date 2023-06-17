@@ -26,6 +26,11 @@
   padding-right: 1rem;
 }
 
+.plr-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pt-1 {
   padding-top: 1rem;
 }
@@ -46,8 +51,16 @@
   padding: 2rem;
 }
 
+.pt-7 {
+  padding-top: 7rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .container {
@@ -94,12 +107,11 @@ p a:visited {
   font-weight: 700;
 }
 
-p a:hover {
-  font-weight: 700;
-  color: var(--theme-color-hover);
-}
-
+p a:hover,
 p a:active {
+  color: var(--theme-color);
   font-weight: 700;
-  color: var(--theme-color-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--theme-color-hover);
+  text-decoration-thickness: 5px;
 }
