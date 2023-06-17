@@ -1,0 +1,53 @@
+@import url(./_global.css);
+
+/* MAIN - INTRO */
+
+main {
+  padding-top: 10rem;
+  background-image: url("../media/shapes/bg-shape-morphing.svg");
+  background-color: #ffffff;
+  background-origin: content-box;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+h1 {
+  line-height: var(--font-lineheight-xxlarge);
+}
+
+.container {
+  max-width: 750px;
+}
+
+p {
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+article ul {
+  margin-left: 0;
+  padding: 1rem 0 1rem 2rem;
+}
+
+article ul li {
+  position: relative;
+}
+
+article ul li:before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: url("../media/icons/dot.svg");
+}
+
+@media only screen and (max-width: 850px) {
+  main {
+    padding-top: 8rem;
+    background-position: 95% 20vh;
+    background-size: 100%;
+  }
+}

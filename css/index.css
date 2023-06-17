@@ -1,5 +1,4 @@
 @import url(./_global.css);
-@import url(./_utility.css);
 
 /* MAIN - INTRO */
 
@@ -91,4 +90,49 @@ main {
 .card-title {
   font-size: var(--font-size-reg);
   font-weight: 700;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 850px) {
+  main {
+    padding-top: 8rem;
+    background-position: 95% 20vh;
+    background-size: 100%;
+  }
+
+  .intro-section {
+    flex-direction: column;
+  }
+
+  .main-line {
+    line-height: 3.4rem;
+  }
+
+  .intro-text,
+  .intro-videos {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .partners {
+    margin: 2rem auto;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .intro-text div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-section .btn {
+    width: 90vw;
+    max-width: 400px;
+  }
 }

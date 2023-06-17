@@ -1,10 +1,12 @@
 const mobileTabletWidth = window.matchMedia("(max-width: 820px)");
+const logo = "./media/logos/risvo-rect-color.svg";
+
 const navbar_items = [
-  { text: "Chi siamo", link: "./pages/chi-siamo.html" },
-  { text: "Cosa facciamo", link: "./pages/cosa-facciamo.html" },
-  { text: "Open data", link: "./pages/open-data.html" },
-  { text: "Media", link: "./pages/media.html" },
-  { text: "Partners", link: "./pages/partners.html" },
+  { text: "Chi siamo", link: "chi-siamo.html" },
+  { text: "Cosa facciamo", link: "cosa-facciamo.html" },
+  { text: "Open data", link: "open-data.html" },
+  /* { text: "Media", link: "media.html" },
+  { text: "Partners", link: "partners.html" }, */
 ];
 
 const createLink = (item) => {
@@ -23,12 +25,12 @@ const renderNavItem = (item, index, viewport = "desktop") => {
   } else {
     li.className = "plr-1 ptb-1";
   }
-
   li.appendChild(createLink(item));
   return li;
 };
 
-const scrollToElem = (selector, yOffset = 0) => {
+const scrollToElem = (url, selector, yOffset = 0) => {
+  window.location.href = url;
   const el = document.querySelector(selector);
   const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
   window.scrollTo({ top: y, behavior: "smooth" });
@@ -38,6 +40,7 @@ window.addEventListener("DOMContentLoaded", () => {
   /* HEADER */
   const desktop_navbar = document.querySelector(".d-menu").querySelector("ul");
   const mobile_navbar = document.querySelector(".m-menu").querySelector("ul");
+  document.querySelector(".logo").querySelector("img").src = logo;
 
   if (mobileTabletWidth.matches) {
     navbar_items.forEach((item, index) => {
