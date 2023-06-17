@@ -4,9 +4,20 @@
   --theme-text: #2d3748;
   --theme-text-dull: #5c6069;
   --theme-text-long: #718096;
-  --theme-color: #00bfa5;
-  --theme-color-hover: #64ffda;
+  --theme-color: #b80c09;
+  --theme-color-hover: #d34f4d;
+  /*   --theme-color: #00bfa5;
+  --theme-color-hover: #64ffda; */
   --theme-section-bg: #f6f7fc;
+  --theme-prove-color: #b8336a;
+  --theme-prove-color: #d30c7b;
+  --theme-prove-color: #907ad6;
+  --theme-prove-color: #dabfff;
+  --theme-prove-color: #c97b84;
+  --theme-prove-color: #d6c9c9;
+  --theme-prove-color: #ed9b40;
+  --theme-prove-color: #aa8f66;
+  --theme-prove-color: #b80c09;
   --font-size-small: 1rem;
   --font-size-reg: 1.2rem;
   --font-size-large: 2rem;
