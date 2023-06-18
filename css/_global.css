@@ -7,10 +7,12 @@
   --theme-color: #00bfa5;
   --theme-color-hover: #64ffda;
   --theme-color-light: #b2ebe4;
-  --theme-secondary-color: #d3002d;
-  --theme-secondary-color-hover: #b80c09;
+  --theme-secondary-color: #907ad6;
+  --theme-secondary-color-hover: #b29bff;
+  /*  --theme-secondary-color: #d3002d;
+  --theme-secondary-color-hover: #b80c09; */
   --theme-section-bg: #f6f7fc;
-  --theme-prove-color: #b8336a;
+  /*   --theme-prove-color: #b8336a;
   --theme-prove-color: #d30c7b;
   --theme-prove-color: #907ad6;
   --theme-prove-color: #dabfff;
@@ -18,7 +20,7 @@
   --theme-prove-color: #d6c9c9;
   --theme-prove-color: #ed9b40;
   --theme-prove-color: #aa8f66;
-  --theme-prove-color: #b80c09;
+  --theme-prove-color: #b80c09; */
   --font-size-xsmall: 0.8rem;
   --font-size-small: 1rem;
   --font-size-reg: 1.2rem;
@@ -98,16 +100,19 @@ header {
   text-decoration-thickness: 5px;
 }
 
+.menu-active-item {
+  color: var(--theme-color);
+  text-decoration: underline;
+  text-decoration-color: var(--theme-color-hover);
+  text-decoration-thickness: 5px;
+}
+
 /* TEXT */
 
 .tag-line {
   font-weight: 700;
   font-size: var(--font-size-large);
   margin-bottom: 0.8rem;
-}
-
-.tag-line span {
-  color: var(--theme-secondary-color);
 }
 
 .main-line {
@@ -144,10 +149,15 @@ header {
   /* color: var(--color-1); */
   background-color: var(--theme-secondary-color-hover);
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .highlight {
   color: var(--theme-color);
+}
+
+.secondary_color {
+  color: var(--theme-secondary-color);
 }
 
 .active {
@@ -155,20 +165,39 @@ header {
 }
 
 p a:link {
-  font-weight: 700;
+  color: var(--theme-secondary-color);
+  font-weight: 500;
 }
 
 p a:visited {
-  font-weight: 700;
+  color: var(--theme-secondary-color);
+  font-weight: 500;
 }
 
 p a:hover,
 p a:active {
-  color: var(--theme-color);
-  font-weight: 700;
+  color: var(--theme-secondary-color-hover);
   text-decoration: underline;
-  text-decoration-color: var(--theme-color-hover);
-  text-decoration-thickness: 5px;
+  text-decoration-color: var(--theme-secondary-color-hover);
+  text-decoration-thickness: 3px;
+}
+
+li a:link {
+  color: var(--theme-secondary-color);
+  font-weight: 500;
+}
+
+li a:visited {
+  color: var(--theme-secondary-color);
+  font-weight: 500;
+}
+
+li a:hover,
+li a:active {
+  color: var(--theme-secondary-color-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--theme-secondary-color-hover);
+  text-decoration-thickness: 3px;
 }
 
 /* FOOTER */

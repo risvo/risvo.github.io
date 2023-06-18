@@ -16,7 +16,7 @@ h1 {
   line-height: var(--font-lineheight-xxlarge);
 }
 
-.container {
+.container:not(.navbar) {
   max-width: 750px;
 }
 
@@ -27,21 +27,23 @@ p {
 
 article ul {
   margin-left: 0;
-  padding: 1rem 0 1rem 2rem;
+  padding: 0 0 1rem 3rem;
 }
 
 article ul li {
   position: relative;
+  padding: 0.5rem 1rem 0 0;
 }
 
-article ul li:before {
+article ul li::before {
   content: "";
   position: absolute;
-  left: -20px;
-  top: 6px;
-  width: 12px;
-  height: 12px;
-  background: url("../media/icons/dot.svg");
+  left: -29px;
+  top: 11px;
+  width: 20px;
+  height: 20px;
+  background: url("../media/icons/arrow-right-lilac.svg");
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 850px) {
@@ -49,5 +51,12 @@ article ul li:before {
     padding-top: 8rem;
     background-position: 95% 20vh;
     background-size: 100%;
+    min-height: 700px;
+  }
+}
+
+@media only screen and (min-width: 851px) {
+  main {
+    min-height: 900px;
   }
 }

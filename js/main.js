@@ -1,17 +1,30 @@
 const mobileTabletWidth = window.matchMedia("(max-width: 820px)");
-const logo = "./media/logos/risvo-rect-color.svg";
 
+const logo_path = page_id === "index" ? "./media/logos/" : "../media/logos/";
+const logo = "risvo-rect-color.svg";
+const navbar_path = page_id === "index" ? "./pages/" : "./";
 const navbar_items = [
-  { text: "Chi siamo", link: "chi-siamo.html" },
-  { text: "Cosa facciamo", link: "cosa-facciamo.html" },
-  { text: "Open data", link: "open-data.html" },
-  /* { text: "Media", link: "media.html" },
-  { text: "Partners", link: "partners.html" }, */
+  { page_id: "chi-siamo", text: "Chi siamo", link: "chi-siamo.html" },
+  {
+    page_id: "cosa-facciamo",
+    text: "Cosa facciamo",
+    link: "cosa-facciamo.html",
+  },
+  { page_id: "open-data", text: "Open data", link: "open-data.html" },
+  /* { page_id: "", text: "Media", link: "media.html" },
+  { page_id: "", text: "Partners", link: "partners.html" }, */
 ];
+
+const footer_path = page_id === "index" ? "./pages/" : "./";
+
+const activeElem = (elem, text) => {
+  elem.classList.add("menu-active-item");
+  elem.innerHTML = text;
+};
 
 const createLink = (item) => {
   let link = document.createElement("a");
-  link.href = item.link;
+  link.href = navbar_path + item.link;
   link.text = item.text;
   return link;
 };
@@ -25,7 +38,9 @@ const renderNavItem = (item, index, viewport = "desktop") => {
   } else {
     li.className = "plr-1 ptb-1";
   }
-  li.appendChild(createLink(item));
+  item.page_id === page_id
+    ? activeElem(li, item.text)
+    : li.appendChild(createLink(item));
   return li;
 };
 
@@ -40,7 +55,7 @@ window.addEventListener("DOMContentLoaded", () => {
   /* HEADER */
   const desktop_navbar = document.querySelector(".d-menu").querySelector("ul");
   const mobile_navbar = document.querySelector(".m-menu").querySelector("ul");
-  document.querySelector(".logo").querySelector("img").src = logo;
+  document.querySelector(".logo").querySelector("img").src = logo_path + logo;
 
   if (mobileTabletWidth.matches) {
     navbar_items.forEach((item, index) => {
@@ -71,8 +86,8 @@ window.addEventListener("DOMContentLoaded", () => {
                       <div class="footer-col text-left plr-1 m-plr-0">
                           <h5>Policy</h5>
                           <ul>
-                              <li><a href="./pages/privacy-policy.html">Privacy</a></li>
-                              <li><a href="./pages/cookies-policy.html">Cookie</a></li>
+                              <li><a href="${footer_path}privacy-policy.html">Privacy</a></li>
+                              <li><a href="${footer_path}crediti.html">Crediti</a></li>
                           </ul>
                       </div>
                       <div class="footer-col text-left pl-1 m-plr-0">
