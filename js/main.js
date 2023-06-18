@@ -1,7 +1,7 @@
 const mobileTabletWidth = window.matchMedia("(max-width: 820px)");
 
 const logo_path = page_id === "index" ? "./media/logos/" : "../media/logos/";
-const logo = "risvo-rect-color.svg";
+const logo_img = "risvo-rect-color.svg";
 const navbar_path = page_id === "index" ? "./pages/" : "./";
 const navbar_items = [
   { page_id: "chi-siamo", text: "Chi siamo", link: "chi-siamo.html" },
@@ -55,7 +55,18 @@ window.addEventListener("DOMContentLoaded", () => {
   /* HEADER */
   const desktop_navbar = document.querySelector(".d-menu").querySelector("ul");
   const mobile_navbar = document.querySelector(".m-menu").querySelector("ul");
-  document.querySelector(".logo").querySelector("img").src = logo_path + logo;
+
+  if (page_id === "index") {
+    document.querySelector(".logo").innerHTML = `
+      <img src="${logo_path}${logo_img}" alt="Logo Risvo" width="100%" height="100%">
+      `;
+  } else {
+    document.querySelector(".logo").innerHTML = `
+                                              <a href="../index.html">
+                                                <img src="${logo_path}${logo_img}" alt="Logo Risvo" width="100%" height="100%">
+                                              </a>
+                                                `;
+  }
 
   if (mobileTabletWidth.matches) {
     navbar_items.forEach((item, index) => {
