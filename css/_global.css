@@ -71,7 +71,8 @@ header {
 }
 
 .logo {
-  width: 200px;
+  width: 180px;
+  display: flex;
 }
 
 .d-menu ul {
@@ -176,24 +177,6 @@ p a:visited {
 
 p a:hover,
 p a:active {
-  color: var(--theme-secondary-color-hover);
-  text-decoration: underline;
-  text-decoration-color: var(--theme-secondary-color-hover);
-  text-decoration-thickness: 3px;
-}
-
-li a:link {
-  color: var(--theme-secondary-color);
-  font-weight: 500;
-}
-
-li a:visited {
-  color: var(--theme-secondary-color);
-  font-weight: 500;
-}
-
-li a:hover,
-li a:active {
   color: var(--theme-secondary-color-hover);
   text-decoration: underline;
   text-decoration-color: var(--theme-secondary-color-hover);

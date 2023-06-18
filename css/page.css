@@ -4,7 +4,7 @@
 
 main {
   padding-top: 10rem;
-  background-image: url("../media/shapes/bg-shape-morphing.svg");
+  background-image: url("../media/shapes/bg-shape-morphing-1.svg");
   background-color: #ffffff;
   background-origin: content-box;
   background-position: 100% 0;
@@ -44,6 +44,24 @@ article ul li::before {
   height: 20px;
   background: url("../media/icons/arrow-right-lilac.svg");
   background-repeat: no-repeat;
+}
+
+article li a:link {
+  color: var(--theme-secondary-color);
+  font-weight: 500;
+}
+
+article li a:visited {
+  color: var(--theme-secondary-color);
+  font-weight: 500;
+}
+
+article li a:hover,
+articleli a:active {
+  color: var(--theme-secondary-color-hover);
+  text-decoration: underline;
+  text-decoration-color: var(--theme-secondary-color-hover);
+  text-decoration-thickness: 3px;
 }
 
 @media only screen and (max-width: 850px) {
