@@ -41,6 +41,7 @@ const renderNavItem = (item, index, viewport = "desktop") => {
   item.page_id === page_id
     ? activeElem(li, item.text)
     : li.appendChild(createLink(item));
+  console.log("li", li);
   return li;
 };
 
