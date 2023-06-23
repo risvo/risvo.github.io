@@ -59,7 +59,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 5;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -326,7 +326,7 @@ html::-webkit-scrollbar-track {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: var(--theme-text);
+    background: var(--theme-text-long);
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
@@ -343,10 +343,10 @@ html::-webkit-scrollbar-track {
   }
 
   #m-menu-toggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: var(--theme-text-long);
+    background: var(--theme-color-hover);
   }
+
+  /*  
 
   #m-menu-toggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
@@ -355,22 +355,22 @@ html::-webkit-scrollbar-track {
 
   #m-menu-toggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
-  }
+  } */
 
   #m-menu-toggle ul {
     position: absolute;
-    width: 300px;
-    top: -30px;
-    right: -10vw;
-    padding: 50px;
-    padding-top: 75px;
-    background: var(--theme-section-bg);
+    width: 100vw;
+    top: 46px;
+    left: -91vw;
+    padding: 30px 50px;
+    background: #fff;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
-    transform: translate(100%, 0);
+    transform: translate(0, -300px);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   }
 
   #m-menu-toggle ul li {
@@ -389,8 +389,8 @@ html::-webkit-scrollbar-track {
   }
 
   #m-menu-toggle ul {
-    width: 250px;
-    padding: 50px 30px 20px;
+    width: 107vw;
+    top: 39px;
   }
 
   #m-menu-toggle ul li {

@@ -1,4 +1,4 @@
-const mobileTabletWidth = window.matchMedia("(max-width: 820px)");
+const mobileTabletWidth = window.matchMedia("(max-width: 850px)");
 
 const logo_path = page_id === "index" ? "./media/logos/" : "../media/logos/";
 const logo_img = "risvo-rect-color.svg";
@@ -41,7 +41,6 @@ const renderNavItem = (item, index, viewport = "desktop") => {
   item.page_id === page_id
     ? activeElem(li, item.text)
     : li.appendChild(createLink(item));
-  console.log("li", li);
   return li;
 };
 
