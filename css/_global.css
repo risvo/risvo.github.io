@@ -183,6 +183,10 @@ p a:active {
   text-decoration-thickness: 3px;
 }
 
+a[href^="mailto:"] {
+  font-style: italic;
+}
+
 /* FOOTER */
 
 footer {
