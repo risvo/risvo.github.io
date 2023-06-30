@@ -1,8 +1,10 @@
 const mobileTabletWidth = window.matchMedia("(max-width: 850px)");
 
-const logo_path = page_id === "index" ? "./media/logos/" : "../media/logos/";
+/* const logo_path = page_id === "index" ? "./media/logos/" : "../media/logos/"; */
+const logo_path = "./media/logos/";
 const logo_img = "risvo-rect-color.svg";
-const navbar_path = page_id === "index" ? "./pages/" : "./";
+/* const navbar_path = page_id === "index" ? "./pages/" : "./"; */
+const navbar_path = "./";
 const navbar_items = [
   { page_id: "chi-siamo", text: "Chi siamo", link: "chi-siamo.html" },
   {
@@ -15,7 +17,9 @@ const navbar_items = [
   { page_id: "", text: "Partners", link: "partners.html" }, */
 ];
 
-const footer_path = page_id === "index" ? "./pages/" : "./";
+/* const footer_path = page_id === "index" ? "./pages/" : "./"; */
+
+const footer_path = "./";
 
 const activeElem = (elem, text) => {
   elem.classList.add("menu-active-item");
@@ -62,7 +66,7 @@ window.addEventListener("DOMContentLoaded", () => {
       `;
   } else {
     document.querySelector(".logo").innerHTML = `
-                                              <a href="../index.html">
+                                              <a href="./index.html">
                                                 <img src="${logo_path}${logo_img}" alt="Logo Risvo" width="100%" height="100%">
                                               </a>
                                                 `;
