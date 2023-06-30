@@ -110,6 +110,10 @@ header {
 
 /* TEXT */
 
+h2 {
+  position: relative;
+}
+
 .tag-line {
   font-weight: 700;
   font-size: var(--font-size-large);
