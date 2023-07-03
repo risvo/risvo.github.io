@@ -110,7 +110,8 @@ header {
 
 /* TEXT */
 
-h2 {
+h2,
+h3 {
   position: relative;
 }
 
