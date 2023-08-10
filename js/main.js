@@ -108,7 +108,7 @@ window.addEventListener("DOMContentLoaded", () => {
                       <div class="footer-col text-left pl-1 m-plr-0">
                           <h5>Social</h5>
                           <ul class="f-social">
-                              <li><a href="https://risvo.github.io/" target="_blank" rel="noopener noreferrer">Github</a></li>
+                              <li><a href="https://github.com/risvo" target="_blank" rel="noopener noreferrer">Github</a></li>
                               <li><a href="https://www.youtube.com/watch?v=1DvkMKSjWRc" target="_blank"
                                       rel="noopener noreferrer">Youtube</a></li>
                               <li><a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a></li>
