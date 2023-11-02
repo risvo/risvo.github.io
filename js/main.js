@@ -2,7 +2,7 @@ const mobileTabletWidth = window.matchMedia("(max-width: 850px)");
 
 /* const logo_path = page_id === "index" ? "./media/logos/" : "../media/logos/"; */
 const logo_path = "./media/logos/";
-const logo_img = "risvo logo.bmp";
+const logo_img = "risvo logo.svg";
 /* const navbar_path = page_id === "index" ? "./pages/" : "./"; */
 const navbar_path = "./";
 const navbar_items = [
