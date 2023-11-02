@@ -67,7 +67,7 @@ window.addEventListener("DOMContentLoaded", () => {
   } else {
     document.querySelector(".logo").innerHTML = `
                                               <a href="https://risvo.github.io/">
-                                                <img src="${logo_path}${logo_img}" alt="risvo logo.svg" width="100%" height="100%">
+                                                <img src="${logo_path}${logo_img}" alt="risvo logo.svg" width="50%" height="50%">
                                               </a>
                                                 `;
   }
