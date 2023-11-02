@@ -62,12 +62,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (page_id === "index") {
     document.querySelector(".logo").innerHTML = `
-      <img src="${logo_path}${logo_img}" alt="Logo Risvo" width="100%" height="100%">
+      <img src="${logo_path}${logo_img}" alt="Logo Risvo" width="50%" height="50%">
       `;
   } else {
     document.querySelector(".logo").innerHTML = `
                                               <a href="./index.html">
-                                                <img src="${logo_path}${logo_img}" alt="risvo logo.svg" width="100%" height="100%">
+                                                <img src="${logo_path}${logo_img}" alt="risvo logo.svg" width="50%" height="50%">
                                               </a>
                                                 `;
   }
