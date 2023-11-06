@@ -2,7 +2,7 @@ const mobileTabletWidth = window.matchMedia("(max-width: 850px)");
 
 /* const logo_path = page_id === "index" ? "./media/logos/" : "../media/logos/"; */
 const logo_path = "./media/logos/";
-const logo_img = "risvo logo.svg";
+const logo_img = "risvo logo red.png";
 /* const navbar_path = page_id === "index" ? "./pages/" : "./"; */
 const navbar_path = "./";
 const navbar_items = [
@@ -62,12 +62,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
   if (page_id === "index") {
     document.querySelector(".logo").innerHTML = `
-      <img src="${logo_path}${logo_img}" alt="Logo Risvo" width="50%" height="50%">
+      <img src="${logo_path}${logo_img}" alt="Logo Risvo" width="100%" height="100%">
       `;
   } else {
     document.querySelector(".logo").innerHTML = `
                                               <a href="https://risvo.github.io/">
-                                                <img src="${logo_path}${logo_img}" alt="risvo logo.svg" width="50%" height="50%">
+                                                <img src="${logo_path}${logo_img}" alt="risvo logo red.png" width="100%" height="100%">
                                               </a>
                                                 `;
   }
