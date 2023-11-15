@@ -109,9 +109,9 @@ window.addEventListener("DOMContentLoaded", () => {
                           <h5>Social</h5>
                           <ul class="f-social">
                               <li><a href="https://github.com/risvo" target="_blank" rel="noopener noreferrer">Github</a></li>
-                              <li><a href="https://www.youtube.com/watch?v=1DvkMKSjWRc" target="_blank"
+                              <li><a href="https://youtube.com/playlist?list=PLUaeoLah--ZsBoRit8trbH74hcCi5aqvj&si=G8kuvvPNdfTY6MBe" target="_blank"
                                       rel="noopener noreferrer">Youtube</a></li>
-                              <li><a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                              <li><a href="https://www.instagram.com/uniprsimlab/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                               <li><a href="https://discord.com/channels/1110201669154787328/1110201671423901826" target="_blank"
                                       rel="noopener noreferrer">Discord</a></li>
                           </ul>
